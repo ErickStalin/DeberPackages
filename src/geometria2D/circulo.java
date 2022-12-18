@@ -1,6 +1,6 @@
 package geometria2D;
 public class circulo {
-    double PI = 3.1416, radioCir, perimetroCir, areaCir;
+    double radioCir, perimetroCir, areaCir;
 
     public circulo(double radioCir, double perimetroCir, double areaCir) {
         this.radioCir = radioCir;
@@ -8,13 +8,6 @@ public class circulo {
         this.areaCir = areaCir;
     }
 
-    public double getPI() {
-        return PI;
-    }
-
-    public void setPI(double PI) {
-        this.PI = PI;
-    }
 
     public double getRadioCir() {
         return radioCir;

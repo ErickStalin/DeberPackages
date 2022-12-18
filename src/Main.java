@@ -4,17 +4,79 @@ import java.lang.*;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-        double radio, generatriz, area, volumen, altura, lado;
-        System.out.print("Ingrese el radio del cono:");
-        radio = entrada.nextDouble();
-        System.out.print("Ingrese la generatiz del cono:");
-        generatriz = entrada.nextDouble();
-        System.out.print("Ingrese el area del cono:");
-        area = entrada.nextDouble();
-        System.out.print("Ingrese el volumen del cono:");
-        volumen = entrada.nextDouble();
-        cono miCono = new cono(radio,generatriz,area ,volumen);
-        System.out.println(miCono.getAreaCo());
+        calcularPerimetrosAreas dosD = new calcularPerimetrosAreas();
+        calcularVolumenAreas tresD = new calcularVolumenAreas();
+        escritura es1 = new escritura();
+        int op = -1, op2;
+        while(op != 0){
+            op = es1.menu();
+            switch (op){
+                case 1:
+                {
+                    op2 = es1.menu2();
+                    switch (op2){
+                        case 1:
+                        {
+                            dosD.mostrarCirculo();
+                        }
+                        break;
+                        case 2:
+                        {
+                            dosD.mostrarCuadrado();
+                        }
+                        break;
+                        case 3:
+                        {
+                            dosD.mostrarHexagono();
+                        }
+                        break;
+                        case 4:
+                        {
+                            dosD.mostrarPentagono();
+                        }
+                        break;
+                        case 5:
+                        {
+                            dosD.mostrarTriangulo();
+                        }
+                        break;
+                    }
+                }
+                break;
+                case 2:
+                {
+                    op2 = es1.menu3();
+                    switch (op2){
+                        case 1:
+                        {
+                            tresD.mostrarCilindro();
+                        }
+                        break;
+                        case 2:
+                        {
+                            tresD.mostrarCono();
+                        }
+                        break;
+                        case 3:
+                        {
+                            tresD.mostrarCubo();
+                        }
+                        break;
+                        case 4:
+                        {
+                            tresD.mostrarEsfera();
+                        }
+                        break;
+                        case 5:
+                        {
+                            tresD.mostrarPrisma();
+                        }
+                        break;
+                    }
+                }
+                break;
+            }
+        }
+
     }
 }

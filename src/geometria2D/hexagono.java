@@ -1,12 +1,13 @@
 package geometria2D;
 
 public class hexagono {
-    double lHex, perimetroHex, apotemaHex;
+    double lHex, perimetroHex, apotemaHex, areaHex;
 
-    public hexagono(double lHex, double perimetroHex, double apotemaHex) {
+    public hexagono(double lHex, double perimetroHex, double apotemaHex, double areaHex) {
         this.lHex = lHex;
         this.perimetroHex = perimetroHex;
         this.apotemaHex = apotemaHex;
+        this.areaHex = areaHex;
     }
 
     public double getlHex() {
@@ -31,5 +32,13 @@ public class hexagono {
 
     public void setApotemaHex(double apotemaHex) {
         this.apotemaHex = apotemaHex;
+    }
+
+    public double getAreaHex() {
+        return areaHex;
+    }
+
+    public void setAreaHex(double areaHex) {
+        this.areaHex = areaHex;
     }
 }

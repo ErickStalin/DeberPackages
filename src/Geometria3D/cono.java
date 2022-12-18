@@ -5,8 +5,8 @@ public class cono {
     public cono(double radioCo, double generatrizCO, double areaCo, double volumenCo) {
         this.radioCo = radioCo;
         this.generatrizCO = generatrizCO;
-        this.areaCo = 3.1416 * (areaCo*areaCo)+3.1416*radioCo*generatrizCO;
-        this.volumenCo = (3.1416*(radioCo*areaCo))/2;
+        this.areaCo = areaCo;
+        this.volumenCo = volumenCo;
     }
 
     public double getRadioCo() {

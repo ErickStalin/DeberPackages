@@ -1,14 +1,15 @@
 package Geometria3D;
 
 public class prisma {
-    double perimetroBase, alturaPri, areaBase, areaPri, volumenPri;
+    double perimetroBase, alturaPri, areaBase, areaPri, volumenPri, apotemaL;
 
-    public prisma(double perimetroBase, double alturaPri, double areaBase, double areaPri, double volumenPri) {
+    public prisma(double perimetroBase, double alturaPri, double areaBase, double areaPri, double volumenPri, double apotemaL) {
         this.perimetroBase = perimetroBase;
         this.alturaPri = alturaPri;
         this.areaBase = areaBase;
         this.areaPri = areaPri;
         this.volumenPri = volumenPri;
+        this.apotemaL = apotemaL;
     }
 
     public double getPerimetroBase() {
@@ -49,5 +50,13 @@ public class prisma {
 
     public void setVolumenPri(double volumenPri) {
         this.volumenPri = volumenPri;
+    }
+
+    public double getApotemaL() {
+        return apotemaL;
+    }
+
+    public void setApotemaL(double apotemaL) {
+        this.apotemaL = apotemaL;
     }
 }
