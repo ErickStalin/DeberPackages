@@ -5,13 +5,14 @@ import java.util.Scanner;
 public class calcularPerimetrosAreas {
     Scanner entrada = new Scanner(System.in);
     double pi = 3.1416;
+    //Solicitud de datos mediante metodos
     public void mostrarCirculo(){
-        double radio, perimetro, area, diametro;
+        //Atributos
+        double radio, perimetro, area;
         System.out.print("Ingrese el radio del circulo:");
         radio = entrada.nextDouble();
-        area = pi*(radio*radio*radio);
+        area = pi*(radio*radio);
         perimetro = 2*pi*radio;
-        diametro = radio/2;
         circulo miCirculo = new circulo(radio,perimetro,area);
         System.out.println("---DATOS DEL CIRCULO---");
         System.out.println("El perimetro del circulo es: " + miCirculo.getPerimetroCir());

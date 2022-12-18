@@ -11,6 +11,7 @@ public class escritura {
         op = entrada.nextInt();
         return op;
     }
+    //figuras en 2d
     public int menu2(){
         int op;
         Scanner entrada = new Scanner(System.in);
@@ -24,6 +25,7 @@ public class escritura {
         op = entrada.nextInt();
         return op;
     }
+    //figuras en 3d
     public int menu3(){
         int op;
         Scanner entrada = new Scanner(System.in);
