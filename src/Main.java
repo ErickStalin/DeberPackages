@@ -4,8 +4,17 @@ import java.lang.*;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        calcularPerimetrosAreas dosD = new calcularPerimetrosAreas(); //Objetos de figuras en 2D
-        calcularVolumenAreas tresD = new calcularVolumenAreas();//Objetos de las figuras en 3D
+        volumenAreaEsfera impEsfera = new volumenAreaEsfera();
+        volumenAreaPrisma impPrisma = new volumenAreaPrisma();
+        volumenAreaCilindro impCilindro = new volumenAreaCilindro();
+        volumenAreaCubo impCubo = new volumenAreaCubo();
+        volumenAreaCono impCono = new volumenAreaCono();
+        perimetroAreaCirculo impCirculo = new perimetroAreaCirculo();
+        perimetroAreaCuadrado impCuadrado = new perimetroAreaCuadrado();
+        perimetroAreaHexagono impHexagono = new perimetroAreaHexagono();
+        perimetroAreaPentagono impPentagono = new perimetroAreaPentagono();
+        perimetroAreaTriangulo impTriangulo = new perimetroAreaTriangulo();
+
         escritura es1 = new escritura();
         int op = -1, op2;
         while(op != 0){
@@ -17,27 +26,27 @@ public class Main {
                     switch (op2){
                         case 1:
                         {
-                            dosD.mostrarCirculo();
+                            impCirculo.mostrarCirculo();
                         }
                         break;
                         case 2:
                         {
-                            dosD.mostrarCuadrado();
+                            impCuadrado.mostrarCuadrado();
                         }
                         break;
                         case 3:
                         {
-                            dosD.mostrarHexagono();
+                            impHexagono.mostrarHexagono();
                         }
                         break;
                         case 4:
                         {
-                            dosD.mostrarPentagono();
+                            impPentagono.mostrarPentagono();
                         }
                         break;
                         case 5:
                         {
-                            dosD.mostrarTriangulo();
+                            impTriangulo.mostrarTriangulo();
                         }
                         break;
                     }
@@ -49,27 +58,27 @@ public class Main {
                     switch (op2){
                         case 1:
                         {
-                            tresD.mostrarCilindro();
+                            impCilindro.mostrarCilindro();
                         }
                         break;
                         case 2:
                         {
-                            tresD.mostrarCono();
+                            impCono.mostrarCono();
                         }
                         break;
                         case 3:
                         {
-                            tresD.mostrarCubo();
+                            impCubo.mostrarCubo();
                         }
                         break;
                         case 4:
                         {
-                            tresD.mostrarEsfera();
+                            impEsfera.mostrarEsfera();
                         }
                         break;
                         case 5:
                         {
-                            tresD.mostrarPrisma();
+                            impPrisma.mostrarPrisma();
                         }
                         break;
                     }
